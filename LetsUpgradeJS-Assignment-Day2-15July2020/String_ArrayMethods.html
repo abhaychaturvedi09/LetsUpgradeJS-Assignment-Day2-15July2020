@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Arrays Methods</title>
+</head>
+<body>
+
+    <h2>Array Methods</h2>
+    <h4>1.concat()</h4>
+    <p>this method used to return the new array by joining two or more arrays.</p>
+     <script>
+         let number = [1,2,3,4];
+         let number1 = [5,6,7];
+         let name = ['abc','def','ijk']; 
+         let names = ['jam','vij','kavi']
+         var newarry = number.concat(number1,name,names);
+         console.log(newarry);
+    </script>
+
+
+<h4>2.slice()</h4>
+<p>this method used to extract the section of array and returns the new array.</p>
+<script>
+    var slicename = ['dog','cat','cow','goat','rat'];
+    var slicecode  = slicename.slice(1,4);
+    console.log(slicecode);    
+</script>
+
+
+<h4>3.join()</h4>
+<p>this method used to join all the elements in an array into string.</p>
+<script>
+    var numlist = [1,2,3,4];    
+    var joined_comma = numlist.join(", ");
+    console.log(joined_comma);
+    var joined = numlist.join("");
+    console.log(joined);
+    var joined_plus = numlist.join("+");
+    console.log(joined_plus);
+</script>
+
+
+<h4>4.pop()</h4>
+<p>this method used to remove last elements from an array and returns that element.</p>
+<script>
+    var poplist = [1,2,3];
+    var numpop = poplist.pop();
+    console.log(numpop);    
+</script>
+
+
+<h4>5.push()</h4>
+<p>this method used to add elements at the last and returns the new array.</p>
+<script>
+var pusharr1 = [52,62,74,85];
+pusharr1.push(95);
+console.log(pusharr1);
+</script>
+
+<h4>6.unshift()</h4>
+<p>this method used to add elements at the beginning and returns the new array.</p>
+<script>
+var unshiftarr1 = [52,62,74,85];
+unshiftarr1.unshift(95);
+</script>  
+
+
+<h4>7.toString()</h4>
+<p>this method used to convert the array into string.</p>
+<script>
+var namestostring = ['dog','cat','cow','goat','rat'];
+namestostring = namestostring.toString(namestostring);
+console.log(namestostring);
+</script>
+
+
+<h4>8.sort()</h4>
+<p>this method used to sort and returns the sorted array.</p>
+<script>
+
+    var sortnum =[95,85,26,45,18];
+    sortnum.sort();
+    console.log(sortnum);
+</script>
+
+
+<h4>9.splice()</h4>
+<p>this method used to change the contents of array adding new elements while removing old elements.</p>
+<script>
+var splicearr = ['dog','cat','cow','goat','rat'];
+var spliceremove = splicearr.splice(1,0,"lion");
+console.log(splicearr);
+console.log(spliceremove);
+</script>
+
+
+<h4>10.reverse()</h4>
+<p>this method used to reverse the contents of array and return the new array.</p>
+<script>
+var reversearr = [25,48,10,14];
+reversearr.reverse();
+console.log(reversearr);
+</script>
+
+
+<h4>11.shift()</h4>
+<p>this method used to remove elements at the beginning and returns the new array.</p>
+<script>
+var shiftarr1 = [52,62,74,85];
+var element = shiftarr1.shift();
+console.log(shiftarr1); // return the new array
+console.log(element); //show the removed element
+</script>
+
+
+<h4>12.lastIndexOf()</h4>
+<p>this method used to return index of the last occurance of the element and returns -1 if not found.</p>
+<script>
+ var lastindexnum = [2,5,8,2,5,6,5];
+ var lastindex = lastindexnum.lastIndexOf(2);
+ console.log(lastindex);
+</script>
+
+
+<h4>13.indexOf()</h4>
+<p>this method used to return index of the first occurance of the element and returns -1 if not found</p>
+<script>
+    var indexnum = [2,5,8,2,5,6,5];
+    var index = indexnum.indexOf(5);
+     console.log(index);
+</script>
+
+
+<h2>String Methods</h2>
+    <h4>1.charAt()</h4>
+    <p>this method used to return the character at the specified index.</p>
+     <script>
+         var charatname = "This is Chennai city.";
+         console.log(charatname.charAt(10));
+    </script>
+
+
+<h4>2.concat()</h4>
+<p>this method used to add two or more string and return the new string.</p>
+ <script>
+     var charatname = "This is Chennai city.";
+     var charatname2 = "This is bangalore city.";
+     console.log(charatname.concat(charatname2));
+</script>
+
+
+<h4>3.valueOf()</h4>
+<p>this method used to return the primitive value of string object.</p>
+ <script>
+     var charatname = "This is Chennai city.";
+    
+     console.log(charatname.valueOf(charatname2));
+</script>
+
+
+<h4>4.toLowerCase()</h4>
+<p>this method used to convert the string into lowercase .</p>
+ <script>
+     var charatname = "This is Chennai city.";
+    
+     console.log(charatname.toLowerCase(charatname2));
+</script>
+
+
+<h4>5.toUpperCase()</h4>
+<p>this method used to convert the string into uppercase .</p>
+ <script>
+     var charatname = "This is Chennai city.";    
+     console.log(charatname.toUpperCase(charatname2));
+</script>
+
+
+<h4>6.substring()</h4>
+<p>this method used to returns the new substring on given parameters.</p>
+ <script>
+     var charatname = "This is Chennai city.";
+console.log(charatname.substring(1,2));//h
+console.log(charatname.substring(0,10)); //This is Ch
+console.log(charatname.substring(5));//is Chennai city.
+ </script>
+
+
+<h4>7.split()</h4>
+<p>this method used to split string object into array.</p>
+ <script>
+     var charatname = "This is Chennai city.";
+     var splitarray = charatname.split(" ",3);
+     console.log(splitarray);
+ </script>
+
+</body>
+</html>
